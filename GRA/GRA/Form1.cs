@@ -26,7 +26,7 @@ namespace GRA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double a = -3.9, b = 3.8, h = 0.15; 
+            double a = -3.9, b = 3.8, h = 0.15; // initial data
 
             // Clearing previous points
             this.chart1.Series.Clear();
