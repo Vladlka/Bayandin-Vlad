@@ -58,6 +58,19 @@ namespace GRA
                 series2.Points.AddXY(x2, y2);
                 x2 += h;
             }
+            // the third function
+            Series series3 = new Series("Function 3");
+            series3.ChartType = SeriesChartType.Line; // 
+            series3.BorderWidth = 3;
+            this.chart1.Series.Add(series3);
+
+            double x3 = a;
+            while (x3 <= b)
+            {
+                double y3 = Math.Sin(Math.Pow(x3, 2)) + Math.Pow(x3, 0.25);
+                series3.Points.AddXY(x3, y3);
+                x3 += h;
+            }
         }
     }
 }
